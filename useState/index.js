@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
-import "./styles.css";
+// import "./styles.css";
+import "/styles.css";
 
 const App = () => {
   const [item, setItem] = useState(1);
