@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-
 import "/styles.css";
+
 
 const useInput = (initialValue, validator) => {
   const [value, setValue] = useState(initialValue);
@@ -26,6 +26,7 @@ const useInput = (initialValue, validator) => {
   return { value, onChange };
 };
 
+
 const App = () => {
   const maxLen = (value) => value.length <= 10; // 길이 제한
   // const excludeAlpha = (value) => !value.includes("@"); // '@' 을 포함하면 true 리턴
@@ -40,6 +41,7 @@ const App = () => {
     </div>
   );
 };
+
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
