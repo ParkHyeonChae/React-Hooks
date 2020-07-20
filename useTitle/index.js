@@ -1,3 +1,6 @@
+// useTitle
+// ex) html 타이틀 Loading 표시, 타이틀에 로딩스피너같은 효과 줄 때
+
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import "./styles.css";
@@ -16,7 +19,7 @@ const useTitle = initialTitle => {
 
 const App = () => {
     const titleUpdater = useTitle("Loading...");
-    // setTimeout(() => titleUpdater("Home"), 5000);
+    setTimeout(() => titleUpdater("Home"), 5000);
 
     return (
         <div className="App">

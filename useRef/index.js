@@ -1,4 +1,5 @@
-// useRef InputFocus example
+// useRef InputFocus example.
+// ex) 입력창에 포커스주거나 이벤트 줄 때, 제한 줄 때
 
 import React, { useState, useEffect, useRef } from "react";
 import ReactDOM from "react-dom";

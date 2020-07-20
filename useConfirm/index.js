@@ -1,4 +1,5 @@
 // useConfirm 확인 alert창
+// ex) alert창 확인, 취소 후 function 걸 때
 
 import React, { useState, useEffect, useRef } from "react";
 import ReactDOM from "react-dom";
